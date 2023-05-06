@@ -1,0 +1,26 @@
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14rem;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 4rem;
+  background-color: #6c91db;
+  border-radius: 35px;
+  gap: 2rem;
+  color: azure;
+  box-shadow: 2px 5px 8px rgb(61, 55, 55);
+}
+
+.movie-container img {
+  border-radius: 0 25px;
+}
+
+.movie-container .movie-info {
+  font-size: 1.1rem;
+}
