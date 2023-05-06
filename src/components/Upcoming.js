@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchUpcomingMovies } from '../redux/movie/movieSlice';
+import PreviousNav from './PreviousNav';
 
-const Upcoming = () => {
+const Upcoming = ({ search }) => {
   const dispatch = useDispatch();
   const upcomingMovies = useSelector((state) => state.movies.upcomingMovies.results);
 
@@ -13,11 +15,14 @@ const Upcoming = () => {
     dispatch(fetchUpcomingMovies());
   }, [dispatch]);
 
+  const filteredMovies = upcomingMovies.filter((movie) => movie.title.toLowerCase().includes(search.toLowerCase()));
+
   return (
     <>
+      <PreviousNav />
       <h1>Upcoming Movies</h1>
       <div className="movie-card-container">
-        {upcomingMovies.map((movie) => (
+        {filteredMovies.map((movie) => (
           <Link to={`/movie/${movie.id}`} className="movie-card" key={movie.id}>
             {movie.release_date}
             <img src={img_path + movie.poster_path} alt={movie.title} />
@@ -29,6 +34,10 @@ const Upcoming = () => {
       </div>
     </>
   );
+};
+
+Upcoming.propTypes = {
+  search: PropTypes.string.isRequired,
 };
 
 export default Upcoming;

@@ -1,0 +1,10 @@
+.prevNav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+
+.back-arrow {
+  color: #5b7ab8;
+  font-size: 3rem;
+}

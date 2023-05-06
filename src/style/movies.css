@@ -27,6 +27,11 @@
   box-shadow: 2px 6px 10px rgb(87, 66, 66);
 }
 
+.movie-card img {
+  border-radius: 0 35px;
+  box-shadow: 2px 6px 10px rgb(87, 66, 66);
+}
+
 .card-footer {
   display: flex;
   flex-direction: column;
