@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem 3rem 3rem 3rem;
   gap: 2rem;
 }
 
@@ -52,4 +52,12 @@
   width: 25px;
   height: 25px;
   border-radius: 20px;
+}
+
+.noData {
+  padding: 4rem;
+  background-color: #5b7ab8;
+  color: azure;
+  box-shadow: 2px 5px 6px black;
+  border-radius: 30px;
 }

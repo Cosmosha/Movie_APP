@@ -22,15 +22,21 @@ const PopularMovies = ({ search }) => {
       <PreviousNav />
       <h1>Most Popular Movies</h1>
       <div className="movie-card-container">
-        {filteredMovies.map((movie) => (
-          <Link to={`/movie/${movie.id}`} className="movie-card" key={movie.id}>
-            {movie.release_date}
-            <img src={img_path + movie.poster_path} alt={movie.title} />
-            <div className="card-footer">
-              <p className="movie-title">{movie.title}</p>
-            </div>
-          </Link>
-        ))}
+        {filteredMovies.length > 0 ? (
+          <div className="movie-card-container">
+            {filteredMovies.map((movie) => (
+              <Link to={`/movie/${movie.id}`} className="movie-card" key={movie.id}>
+                {movie.release_date}
+                <img src={img_path + movie.poster_path} alt={movie.title} />
+                <div className="card-footer">
+                  <p className="movie-title">{movie.title}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <h2 className="noData">No Data Found</h2>
+        )}
       </div>
     </>
   );
