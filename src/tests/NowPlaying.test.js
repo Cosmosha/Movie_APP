@@ -1,4 +1,4 @@
-import fetchNowPlaying from "./__mocks__/fetchNowPlaying";
+import fetchNowPlaying from './__mocks__/fetchNowPlaying';
 
 describe('NowPlaing must pass the test', () => {
   test('Fetch available animes must return data', () => {

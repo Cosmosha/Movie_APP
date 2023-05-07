@@ -1,4 +1,4 @@
-import fetchPopularMovies from "./__mocks__/fetchPopularMovies";
+import fetchPopularMovies from './__mocks__/fetchPopularMovies';
 
 describe('popularMovies must pass the test', () => {
   test('Fetch available popularMovies must return data', () => {
