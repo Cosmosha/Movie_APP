@@ -5,6 +5,7 @@
 - [🛠 Built With](#built-with)
 - [Tech Stack](#tech-stack)
   - [Key Features](#key-features)
+- [🚀 WalkThrough](#Walk-through)
 - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -39,6 +40,10 @@ Hello! This is my Second React JS capstone project. Here you can see all the fea
   <ul>
     <li><a href="#">React JS</a></li>
   </ul>
+
+  <ul>
+    <li><a href="#">TMDB API</a></li>
+  </ul>
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -55,9 +60,14 @@ Hello! This is my Second React JS capstone project. Here you can see all the fea
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+##  WalkThrough <a name="Walk-through"></a>
+
+> Link to project Walkthrough. [Walkthrough video](https://www.loom.com/share/cb3e93e563234ecc94c26a055422e4f1)
+
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> coming soon!
+> Link to project demo. [Demo Link](https://develop--dazzling-phoenix-ffdd2f.netlify.app/)
 
 Link to github repository. [Movie APP](https://github.com/cosmosha/movie_app)
 
